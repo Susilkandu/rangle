@@ -1,0 +1,29 @@
+html
+  head
+    title rangle.in
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  block style 
+        style 
+            include ../../css/old_user_interface/userbase.css    
+  body
+   block navbar 
+    #navbar
+        ul
+            li#balance
+                div  Rs.#{verification.balance}
+            li#addmoney
+                a(href='#/') Add money 
+            li#withdrawmoney
+                 a(href='#/') Withdraw money 
+            li
+                 a(href='#/') #{verification.uname}
+            li#upprofile
+                a(href="/profile")
+                    img#updtprofile(src="/public/images/updtprofile.png", alt="")
+            #RandomId #{verification._id}
+            #RoomId
+   block content 
+   block footer 
+   block script 

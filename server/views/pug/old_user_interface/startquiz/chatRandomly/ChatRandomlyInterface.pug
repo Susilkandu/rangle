@@ -1,0 +1,18 @@
+extends ../../userbase.pug
+block  style 
+        style 
+            include ../../../../css/old_user_interface/startquiz/chatRandomly/ChatInterface.css
+block content
+    center.container
+    .navbar
+        #status.status Connnecting
+        #tstatus.status
+        button#next(type='button', onclick='next()')|Next
+    #messagearea.messagearea
+    .send
+        textarea#message(name='message' cols='20' rows='1' placeholder='Say Something')
+        button#send Send
+block script 
+        script(src='/socket.io/socket.io.js')
+        script 
+                include ../../../../js/old_user_interface/startquiz/chatRandomly/ChatRandomlyInterface.js

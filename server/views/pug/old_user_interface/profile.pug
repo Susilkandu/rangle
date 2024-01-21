@@ -1,0 +1,21 @@
+extends userbase.pug 
+block content 
+      #updatior.updatior
+        #uname #{verification.uname} 
+        div.namer Name
+        #gender #{verification.gender}
+        div.namer Gender
+        #dob #{verification.dob}
+        div.namer DOB
+        #email #{verification.email}
+        div.namer Email
+        #mobilenumber #{verification.mobilenumber}
+        div.namer Mobile
+        #country #{verification.country}
+        div.namer Country     
+        a#submit(href="update-profile") Edit 
+        h5#message 
+          #{message}
+block script      
+        script 
+             include ../../js/old_user_interface/profile.js

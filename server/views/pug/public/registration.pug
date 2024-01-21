@@ -1,0 +1,29 @@
+extends base.pug
+block style 
+     style
+        include ../../css/public/base.css
+        include ../../css/public/registration.css 
+block content 
+    #signup
+      form(action="/registration", method="post")
+        input#uname(type="text",  name="uname", maxlength="20", placeholder="Enter the user name" required)
+        span#unamemessage
+        select#gender(name='gender' required)
+          option(value='female') Female
+          option(value='male') Male
+          option(value='other') other
+        input#dob(type='text', placeholder='Choose Your Date Of Birthday', onfocus="(this.type='date')" name='dob' min=`1940-01-01` required)
+        input#email(type="email", name="email", placeholder="Enter your email id" required)
+        span#emailmessage
+        input#mobilenumber(type="tel", name="mobilenumber", maxlength="10", placeholder="Enter your 10 digit mobile number" required)
+        span#mobilemessage
+        input#npassword(type="password", name="npassword", placeholder="Create new password" required)
+        input#repassword(type="password", name="repassword", placeholder="Re enter new password" required)
+        span#passwordmessage
+        input#dbalance(type="number",name="balance",value='0')
+        button#formsubmit(type="submit") Submit
+    h5#message 
+      #{message}
+block script 
+    script 
+      include ../../js/public/registration.js

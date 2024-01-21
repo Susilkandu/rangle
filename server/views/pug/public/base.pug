@@ -1,0 +1,36 @@
+html 
+    head
+         meta(charset='UTF-8')
+         meta(http-equiv='X-UA-Compatible', content='IE=edge')
+         meta(name='viewport', content='width=device-width, initial-scale=1.0')
+         link(rel="icon", href="favicon.png", type="image/x-icon")
+         link(rel='preconnect', href='https://fonts.googleapis.com')
+         link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+         link(href='https://fonts.googleapis.com/css2?family=Boogaloo&family=Chewy&display=swap', rel='stylesheet') 
+    title pug.in 
+    block style 
+         style
+            include ../../css/public/base.css
+            
+    body 
+     block navbar 
+       ul#navtop 
+        li#home 
+            a(href="/") Home 
+        li#registration  
+            a(href="/registration") Registration 
+        li#login
+            a(href="/login") Login
+        li#forgotpassword
+            a(href="/forgotpassword") forgot password
+        li#ourservices  
+            a(href="/ourservices") Our Services
+     block content
+            center#stayRandom
+                img#icon(src="/public/images/icon.png", alt="none", srcset="")
+                p  Chat Randomly ! Stay Randomly! 
+     block #footer 
+            h4 Copyright © 2022-♾ 
+    block script 
+        script 
+            include ../../js/public/base.js

@@ -1,0 +1,16 @@
+extends base.pug
+block style 
+    style   
+        include ../../css/public/base.css
+        include ../../css/public/login.css
+block content
+ #loginformcontainer
+  form(action='login', method='post')
+    input#lemail(type='email', name='email', placeholder='Enter your Email-id', required)
+    input#lpassword(type='password', name='password', placeholder='Enter Your password', required)
+    input#lsubmit(type='submit', value='Submit')
+ div#message
+    #{message}  
+block script 
+    script  
+      include ../../js/public/login.js

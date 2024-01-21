@@ -1,0 +1,186 @@
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color:#12212E;
+}
+#navbar
+{
+    display: none;
+}
+.navbar
+{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    position: fixed;
+    background-color: #1b324a;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+
+.status,.name
+{
+    
+    margin-top: 14px;
+    font-size: x-large;
+    font-style: italic;
+    color: rgb(255 102 12);
+    font-weight: bolder;
+}
+.name
+{
+    color: whitesmoke;
+}
+#next
+{
+    display: none;
+    width: 3rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    border: 2px solid black;
+    border-radius: 0.4rem;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(16 0 255);
+}
+#next:hover{
+    border: 2px solid white;
+}
+.dp
+{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 2rem;
+    
+}
+.left
+{
+   float: left;
+clear: both;
+margin-left: 0.5rem;
+border: 2px solid rgb(136, 82, 24);
+}
+.right
+{
+    float: right;
+clear: both;
+margin-top: 3px;
+margin-right: 0.5rem;
+border: 2px solid rgb(5, 155, 68);
+}
+.right, .left
+{
+    color: White;
+    margin-top: 0.2rem;
+    margin-bottom: -0.1rem;
+    border-radius: 0.3rem;
+    border-top-left-radius:1rem;
+    padding: 3px 3px;
+
+}
+.send
+{
+    position: fixed; 
+    bottom:2px;
+    text-align: center;
+    width: 96vw;
+    padding: 3px;
+    left:1.5vw;  
+}
+#message
+{
+    width: 78vw;
+    text-align: center;
+    font-size:medium;
+    margin-bottom: -9px;
+    border-radius: 1rem;
+    font-size:x-large;
+}
+#send
+{
+    background-image:linear-gradient(#1b324a,black);
+    border: 2px solid rgb(0 249 255);
+    border-radius: 4px;
+    color:rgb(251 133 2);
+    font-size: large;
+    cursor: pointer;
+    width: 14vw;
+    border-bottom-right-radius: 2rem;  
+
+}
+.messagearea
+{
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    height: 88vh;
+    overflow-y: auto;
+}
+
+#send:hover
+{
+ border: 2px solid rgb(65, 163, 172);
+}
+@media  (max-width:820px) {
+ .status
+ {  font-size: 1.5rem;
+    color: rgb(255 102 12);
+ }   
+ .messagearea
+{
+    padding-top: 2.5rem;
+    padding-bottom: 17rem;
+    height: 88vh;
+    overflow-y: auto;
+}
+ .send
+ {
+    position: fixed; 
+    bottom:2px;
+    text-align: center;
+    width: 96vw;
+    padding: 3px;
+    left:1.5vw;  
+ }
+ #send
+{
+    background-image: linear-gradient(#1b324a,black);
+    border: 2px solid rgb(0 249 255);
+    border-radius: 4px;
+    color: rgb(251 133 2);
+    font-size: large;
+    height: 2rem;
+    cursor: pointer;
+    width: 15vw;
+    border-bottom-right-radius: 2rem;
+}
+#message
+{
+    width: 78vw;
+    height: 2rem;
+    text-align: center;
+    margin-bottom: -9px;
+    border-radius: 1rem;
+}
+.left
+{
+    border: 2px solid rgb(136, 82, 24);
+}
+.right
+{
+    border: 2px solid rgb(5, 155, 68);
+}
+.right, .left {
+    color: White;
+    margin-top: 0.5rem;
+    margin-bottom: -0.1rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 1rem;
+    padding: 3px 6px;
+}
+}

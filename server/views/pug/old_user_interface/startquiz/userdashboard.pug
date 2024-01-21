@@ -1,0 +1,11 @@
+extends ../userbase.pug
+block content 
+     section.gamesection#list
+                ul
+                    li 
+                        div#ChatRandomly.TikaniHead Chat Randomly
+                           a(href="/ChatRandomly") 
+                            button#StartChatRandomly.StartBtn(type="submit") Chat Now
+block script 
+        script 
+              include    ../../../js/old_user_interface/startquiz/userdashboard.js 
